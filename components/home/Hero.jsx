@@ -30,7 +30,7 @@ function Hero() {
   }, [vantaEffect]);
   return (
     <>
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></Script>
+      <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></Script>
 
       <VStack flex="1" h="450px" ref={vanta}>
         <Heading
