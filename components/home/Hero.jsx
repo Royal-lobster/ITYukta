@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { VStack, Heading, Text } from "@chakra-ui/react";
 import NET from "vanta/dist/vanta.net.min.js";
+import Script from "next/script";
 
 function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -29,7 +30,7 @@ function Hero() {
   }, [vantaEffect]);
   return (
     <>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></Script>
 
       <VStack flex="1" h="450px" ref={vanta}>
         <Heading
