@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
+import { MdMail } from "react-icons/md";
 
 const Logo = (props) => {
   return (
@@ -98,6 +99,9 @@ export default function Footer() {
             href={"https://instagram.com/ityukta_2k22/"}
           >
             <FaInstagram />
+          </SocialButton>
+          <SocialButton label={"Email"} href={"mailto:contact@ityukta.org"}>
+            <MdMail />
           </SocialButton>
         </Stack>
       </Container>

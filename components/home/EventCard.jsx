@@ -4,28 +4,41 @@ import { Image } from "../../elements/Image.tsx";
 import NextLink from "next/link";
 export function EventCard({ eventName, eventDescription, eventImage }) {
   return (
-    <LinkBox bgColor="gray.700" overflow="hidden">
+    <LinkBox
+      bgColor="gray.700"
+      boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)"
+      borderRadius="md"
+      overflow="hidden"
+    >
       <Image src={eventImage} h="150px" />
-      <Box p={4}>
+      <Box>
         <NextLink
           href={`/events/${eventName.toLowerCase().replace(" ", "-")}`}
           passHref
         >
           <LinkOverlay href="passRef">
-            <Heading as="h3" fontSize="xl">
+            <Heading
+              display="flex"
+              alignItems="center"
+              gap={2}
+              px={4}
+              py={2}
+              bgColor="#0000002a"
+              as="h3"
+              fontSize="xl"
+            >
+              <Box
+                display="inline-block"
+                h="20px"
+                w="4px"
+                bgColor={`hsl(${Math.floor(Math.random() * 360)}, 50%, 70%)`}
+                rounded="full"
+              />{" "}
               {eventName}
             </Heading>
           </LinkOverlay>
         </NextLink>
-        <Text
-          bgColor="#0000002a"
-          borderLeftWidth={2}
-          borderColor="green.300"
-          p={2}
-          mt={2}
-        >
-          {eventDescription}
-        </Text>
+        <Text p={4}>{eventDescription}</Text>
       </Box>
     </LinkBox>
   );

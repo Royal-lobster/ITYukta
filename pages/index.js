@@ -1,5 +1,6 @@
 import React from "react";
 import About from "../components/home/About.jsx";
+import Culturals from "../components/home/Culturals.jsx";
 import EventsList from "../components/home/EventsList.jsx";
 import Hero from "../components/home/Hero.jsx";
 import PoweredBy from "../components/home/PoweredBy.jsx";
@@ -54,6 +55,7 @@ function index({ techEventsData, nonTechEventsData, workshopData }) {
         techEventsData={techEventsData}
         nonTechEventsData={nonTechEventsData}
       />
+      <Culturals />
     </>
   );
 }
