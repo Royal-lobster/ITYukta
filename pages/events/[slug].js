@@ -103,7 +103,7 @@ function EventPage({ eventData }) {
             <Button colorScheme="green" mr={3} onClick={onClose}>
               Close
             </Button>
-            <NextLink href={eventData.Event_Registration_URL}>
+            <NextLink href={eventData.Event_Registration_URL || "/"}>
               <Button>Open Link</Button>
             </NextLink>
           </ModalFooter>
@@ -165,7 +165,7 @@ function EventPage({ eventData }) {
               directed to google form to fill in your details.
             </Text>
             <ButtonGroup mt={4} size="lg" isAttached variant="outline">
-              <NextLink href={eventData.Event_Registration_URL}>
+              <NextLink href={eventData.Event_Registration_URL || "/"}>
                 <Button
                   colorScheme="green"
                   leftIcon={<ExternalLinkIcon />}
