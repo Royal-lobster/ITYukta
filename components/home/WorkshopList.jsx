@@ -18,6 +18,7 @@ function WorkshopList({ workshopData }) {
       <SimpleGrid columns={[1, 1, 2, 2]} spacing={8} mb={12}>
         {workshopData?.map((workshop) => (
           <WorkshopCard
+            key={workshop.id}
             workshopName={workshop.Workshop_Name}
             WorkshopInstructor={workshop.Workshop_Instructor}
             WorkshopInstructorImage={workshop.Workshop_Instructor_Image}
