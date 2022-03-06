@@ -35,7 +35,7 @@ function Hero() {
         src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
       ></Script>
 
-      <VStack flex="1" h="450px" ref={vanta}>
+      <VStack bgColor="gray.800" flex="1" h="450px" ref={vanta}>
         <Heading
           textAlign="center"
           pt="20vh"
