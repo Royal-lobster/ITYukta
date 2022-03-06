@@ -1,5 +1,5 @@
 import { EventCard } from "./EventCard";
-import { Heading, Box, SimpleGrid } from "@chakra-ui/react";
+import { Box, SimpleGrid } from "@chakra-ui/react";
 import React from "react";
 import Title from "../../elements/Title.tsx";
 
