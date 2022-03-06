@@ -72,7 +72,7 @@ export const getStaticProps = async ({ params }) => {
   return { props: { eventData: eventData.data[0] } };
 };
 
-function eventPage({ eventData }) {
+function EventPage({ eventData }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
@@ -239,4 +239,4 @@ function eventPage({ eventData }) {
   );
 }
 
-export default eventPage;
+export default EventPage;
