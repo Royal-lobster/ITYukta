@@ -5,7 +5,7 @@ function About() {
   return (
     <Box mx="auto" p={4} mt={8} maxW="1200px">
       <Title title="About IT Yukta" />
-      <Text fontSize="lg" mb={4}>
+      <Text fontSize={{ base: "md", lg: "lg" }} mb={4}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
         fugit maxime eum quisquam earum iste tenetur id temporibus ratione,
         dolores ad repellat illo nihil laboriosam recusandae molestias.

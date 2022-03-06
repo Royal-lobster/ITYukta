@@ -26,10 +26,9 @@ function PoweredBy() {
           py="lg"
         >
           <Heading
-            mb={1}
             fontWeight="100"
             whiteSpace="nowrap"
-            fontSize={{ base: "16px", lg: "30px" }}
+            fontSize={{ base: "16px", lg: "25px" }}
           >
             Powered By
           </Heading>
