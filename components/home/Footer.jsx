@@ -82,6 +82,12 @@ export default function Footer() {
         <Text>© 2022 IT Yukta. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton
+            label={"Twitter"}
+            href={"https://twitter.com/Ityukta_2k22"}
+          >
+            <FaTwitter />
+          </SocialButton>
+          <SocialButton
             label={"Facebook"}
             href={"https://www.facebook.com/Ityukta_2k22-108834475082211/"}
           >

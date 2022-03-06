@@ -106,8 +106,8 @@ function eventPage({ eventData }) {
         <Box flex="1">
           <Title title="Event Details" />
           <Text fontSize="md" mt={4} mb={8}>
-            {EventData.Event_Content
-              ? EventData.Event_Content
+            {eventData.Event_Content
+              ? eventData.Event_Content
               : `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi
             tenetur ducimus, inventore debitis dolor optio voluptates nostrum
             veniam neque assumenda cum blanditiis iure explicabo doloribus
