@@ -10,7 +10,7 @@ function EventsList({ techEventsData, nonTechEventsData }) {
       <SimpleGrid columns={[1, 1, 2, 4]} spacing={8} mb={12}>
         {techEventsData?.map((event) => (
           <EventCard
-            id={event.id}
+            key={event.id}
             eventName={event.Event_Name}
             eventDescription={event.Event_Description}
             eventImage={event.Event_Image}
@@ -22,7 +22,7 @@ function EventsList({ techEventsData, nonTechEventsData }) {
       <SimpleGrid columns={[1, 1, 2, 4]} spacing={8}>
         {nonTechEventsData?.map((event) => (
           <EventCard
-            id={event.id}
+            key={event.id}
             eventName={event.Event_Name}
             eventDescription={event.Event_Description}
             eventImage={event.Event_Image}

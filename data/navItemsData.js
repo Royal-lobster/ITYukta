@@ -1,5 +1,9 @@
 export const NAV_ITEMS = [
   {
+    label: "Home",
+    href: "/",
+  },
+  {
     label: "Workshops",
     children: [
       {
@@ -11,7 +15,7 @@ export const NAV_ITEMS = [
         label: "App development with IOT",
         subLabel:
           "Work shop on Application development with Internet of Things",
-        href: "/workshops/app-development-with-iot",
+        href: "/workshops/app-development-with-internet-of-things",
       },
     ],
   },
@@ -69,9 +73,5 @@ export const NAV_ITEMS = [
         href: "/events/picture-perfect",
       },
     ],
-  },
-  {
-    label: "Culturals",
-    href: "/culturals",
   },
 ];

@@ -3,6 +3,7 @@ import About from "../components/home/About.jsx";
 import EventsList from "../components/home/EventsList.jsx";
 import Hero from "../components/home/Hero.jsx";
 import PoweredBy from "../components/home/PoweredBy.jsx";
+import WorkshopList from "../components/home/WorkshopList.jsx";
 
 export async function getStaticProps() {
   // FETCH TECHNICAL EVENTS
@@ -17,29 +18,38 @@ export async function getStaticProps() {
   );
   const nonTechEventsData = await r2.json();
 
-  // APPEND BOTH DATA Event_Image with PROCESS.ENV.BACKEND_URL/assets/
+  // FETCH WORKSHOPS
+  const r3 = await fetch(`${process.env.BACKEND_URL}/items/Workshop`);
+  const workshopData = await r3.json();
+
+  // APPEND Images with PROCESS.ENV.BACKEND_URL/assets/
   techEventsData.data.forEach((event) => {
     event.Event_Image = `${process.env.BACKEND_URL}/assets/${event.Event_Image}`;
   });
   nonTechEventsData.data.forEach((event) => {
     event.Event_Image = `${process.env.BACKEND_URL}/assets/${event.Event_Image}`;
   });
+  workshopData.data.forEach((workshop) => {
+    workshop.Workshop_Image = `${process.env.BACKEND_URL}/assets/${workshop.Workshop_Image}`;
+    workshop.Workshop_Instructor_Image = `${process.env.BACKEND_URL}/assets/${workshop.Workshop_Instructor_Image}`;
+  });
 
   return {
     props: {
       techEventsData: techEventsData.data,
       nonTechEventsData: nonTechEventsData.data,
+      workshopData: workshopData.data,
     },
   };
 }
 
-function index({ techEventsData, nonTechEventsData }) {
-  console.log(nonTechEventsData);
+function index({ techEventsData, nonTechEventsData, workshopData }) {
   return (
     <>
       <Hero />
-      <About />
       <PoweredBy />
+      <About />
+      <WorkshopList workshopData={workshopData} />
       <EventsList
         techEventsData={techEventsData}
         nonTechEventsData={nonTechEventsData}
