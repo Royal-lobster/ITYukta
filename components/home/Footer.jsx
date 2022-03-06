@@ -9,7 +9,7 @@ import {
   VisuallyHidden,
   Flex,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 const Logo = (props) => {
@@ -81,13 +81,16 @@ export default function Footer() {
         </Flex>
         <Text>© 2022 IT Yukta. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
-            <FaTwitter />
+          <SocialButton
+            label={"Facebook"}
+            href={"https://www.facebook.com/Ityukta_2k22-108834475082211/"}
+          >
+            <FaFacebook />
           </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
+          <SocialButton
+            label={"Instagram"}
+            href={"https://instagram.com/ityukta_2022"}
+          >
             <FaInstagram />
           </SocialButton>
         </Stack>
