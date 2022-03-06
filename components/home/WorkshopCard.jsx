@@ -22,8 +22,6 @@ export function WorkshopCard({
   return (
     <LinkBox
       overflow="hidden"
-      borderWidth="1px"
-      borderColor="gray.700"
       bgColor="gray.700"
       boxShadow="0px 4px 8px rgba(0, 0, 0, 0.25)"
       borderRadius="md"
