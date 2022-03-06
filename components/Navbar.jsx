@@ -3,7 +3,6 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Icon,
@@ -13,7 +12,6 @@ import {
   PopoverContent,
   useBreakpointValue,
   useDisclosure,
-  HStack,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -21,9 +19,9 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-
 import { AiFillThunderbolt } from "react-icons/ai";
 import { NAV_ITEMS } from "../data/navItemsData";
+import NextLink from "next/link";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -43,14 +41,17 @@ export default function Navbar() {
       >
         <Flex flex={{ base: 1 }} align="center" gap={2} justify="start">
           <Icon as={AiFillThunderbolt} color="green.500" fontSize="20px" />
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontWeight={"bold"}
-            color={"white"}
-            fontFamily="ITYukta"
-          >
-            IT Yukta
-          </Text>
+          <NextLink href="/">
+            <Text
+              cursor="pointer"
+              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              fontWeight={"bold"}
+              color={"white"}
+              fontFamily="ITYukta"
+            >
+              IT Yukta
+            </Text>
+          </NextLink>
         </Flex>
 
         <Stack justify={"flex-end"} display={{ base: "none", lg: "flex" }}>

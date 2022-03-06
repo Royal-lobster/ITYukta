@@ -1,10 +1,8 @@
 import React from "react";
 import About from "../components/home/About.jsx";
 import EventsList from "../components/home/EventsList.jsx";
-import Footer from "../components/home/Footer.jsx";
 import Hero from "../components/home/Hero.jsx";
 import PoweredBy from "../components/home/PoweredBy.jsx";
-import Navbar from "../components/Navbar.jsx";
 
 export async function getStaticProps() {
   // FETCH TECHNICAL EVENTS
@@ -39,7 +37,6 @@ function index({ techEventsData, nonTechEventsData }) {
   console.log(nonTechEventsData);
   return (
     <>
-      <Navbar />
       <Hero />
       <About />
       <PoweredBy />
@@ -47,7 +44,6 @@ function index({ techEventsData, nonTechEventsData }) {
         techEventsData={techEventsData}
         nonTechEventsData={nonTechEventsData}
       />
-      <Footer />
     </>
   );
 }

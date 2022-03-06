@@ -4,8 +4,8 @@ import { Image } from "../../elements/Image.tsx";
 import NextLink from "next/link";
 export function EventCard({ eventName, eventDescription, eventImage }) {
   return (
-    <LinkBox bgColor="gray.700" borderRadius="md" overflow="hidden">
-      <Image src={eventImage} h="100px" />
+    <LinkBox bgColor="gray.700" overflow="hidden">
+      <Image src={eventImage} h="150px" />
       <Box p={4}>
         <NextLink
           href={`/events/${eventName.toLowerCase().replace(" ", "-")}`}
