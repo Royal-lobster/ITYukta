@@ -43,7 +43,7 @@ function Hero() {
           fontSize={{ base: "40px", lg: "80px" }}
           className="hero-text"
         >
-          IT Yukta 2022
+          IT Yukta 2K22
         </Heading>
         <Text fontSize="30px" bgColor="green.400" fontWeight="bold" px={2}>
           Technical Symposium

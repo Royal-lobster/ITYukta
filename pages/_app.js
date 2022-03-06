@@ -6,6 +6,35 @@ import Footer from "../components/home/Footer";
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        {/* <!-- HTML Meta Tags --> */}
+        <title>IT Yukta 2K22 Fest</title>
+        <meta
+          name="description"
+          content="IT Yukta 2022 is a National Level Technical Symposium conducted by JNTUG Vizianagaram of Information Technology department"
+        />
+
+        {/* <!-- Facebook Meta Tags --> */}
+        <meta property="og:url" content="https://ityukta.org/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="IT Yukta 2K22 Fest" />
+        <meta
+          property="og:description"
+          content="IT Yukta 2022 is a National Level Technical Symposium conducted by JNTUG Vizianagaram of Information Technology department"
+        />
+        <meta property="og:image" content="https://i.imgur.com/d8aht77.png" />
+
+        {/* <!-- Twitter Meta Tags --> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="ityukta.org" />
+        <meta property="twitter:url" content="https://ityukta.org/" />
+        <meta name="twitter:title" content="IT Yukta 2K22 Fest" />
+        <meta
+          name="twitter:description"
+          content="IT Yukta 2022 is a National Level Technical Symposium conducted by JNTUG Vizianagaram of Information Technology department"
+        />
+        <meta name="twitter:image" content="https://i.imgur.com/d8aht77.png" />
+      </Head>
       <ChakraProvider>
         <div id="page-container">
           <Navbar />
