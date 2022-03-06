@@ -30,14 +30,17 @@ function Hero() {
   }, [vantaEffect]);
   return (
     <>
-      <Script strategy="beforeInteractive" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></Script>
+      <Script
+        strategy="beforeInteractive"
+        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+      ></Script>
 
       <VStack flex="1" h="450px" ref={vanta}>
         <Heading
           textAlign="center"
           pt="20vh"
           fontFamily="ITYukta"
-          fontSize={{ base: "40px", lg: "50px", xl: "80px" }}
+          fontSize={{ base: "40px", lg: "80px" }}
           className="hero-text"
         >
           IT Yukta 2022

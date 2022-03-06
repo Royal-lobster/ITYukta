@@ -1,13 +1,10 @@
 import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
-
+import Title from "../../elements/Title.tsx";
 function About() {
   return (
     <Box mx="auto" p={4} mt={8} maxW="1200px">
-      <Heading mb={2} fontSize="3xl">
-        About IT Yukta
-      </Heading>
-      <Box w="80px" h="4px" rounded="full" bgColor="green.300" mb={4} />
+      <Title title="About IT Yukta" />
       <Text fontSize="lg" mb={4}>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
         fugit maxime eum quisquam earum iste tenetur id temporibus ratione,
