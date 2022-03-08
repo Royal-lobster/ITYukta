@@ -6,17 +6,7 @@ function About() {
     <Box mx="auto" p={4} mt={8} maxW="1200px">
       <Title title="About IT Yukta" />
       <Text fontSize={{ base: "md", lg: "lg" }} mb={4}>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
-        fugit maxime eum quisquam earum iste tenetur id temporibus ratione,
-        dolores ad repellat illo nihil laboriosam recusandae molestias.
-        Molestias id reprehenderit obcaecati ullam sapiente iure beatae quisquam
-        numquam at aut animi eos ipsa recusandae delectus voluptates repellendus
-        quam iusto distinctio, temporibus voluptate voluptatum natus est!
-        Placeat optio ut est voluptate explicabo, aut voluptas, maxime deserunt
-        quos, ipsa omnis repellat dignissimos magni quasi et ipsum!
-        Exercitationem sapiente totam unde, corporis aut architecto accusamus
-        fugiat atque possimus quis nisi necessitatibus, adipisci a nemo iure
-        quia mollitia qui modi perferendis iste molestiae incidunt quibusdam!
+      The two National Level Technical Symposium is going to be conducted at a grand level which includes several most advanced technical workshops and events to enhance their skills also there are going to dazzling performances by our youngsters at cultures. We are going to push the very boundaries of present technological advancement. So we the youngsters of the new technical era promise you to that this two day technical event is worth your time as you are going to enhance your technical skill, test your knowledge resources and can have a blast during the culturals. Please do join us on 30&31st of this month.
       </Text>
     </Box>
   );
