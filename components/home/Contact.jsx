@@ -63,15 +63,15 @@ export default function Contact() {
               }}
             >
               Get in Touch
+              <Box w="80px" h="4px" rounded="full" bgColor="green.300" mt={4} />
             </Heading>
-
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: "column", md: "row" }}
             >
               <Stack
                 align="center"
-                justify="space-around"
+                justify={{ base: "center", md: "space-around" }}
                 direction={{ base: "row", md: "column" }}
               >
                 <Tooltip
@@ -87,29 +87,29 @@ export default function Contact() {
                     icon={<MdEmail />}
                     _hover={{
                       bg: "green.500",
-                      color: useColorModeValue("white", "gray.700"),
+                      color: "white",
                     }}
                     onClick={onCopy}
                     isRound
                   />
                 </Tooltip>
 
-                <Link href="#">
+                <Link href="https://instagram.com/ityukta_2k22/">
                   <IconButton
-                    aria-label="github"
+                    aria-label="instagram"
                     variant="ghost"
                     size="lg"
                     fontSize="3xl"
                     icon={<BsInstagram />}
                     _hover={{
                       bg: "green.500",
-                      color: useColorModeValue("white", "gray.700"),
+                      color: "white",
                     }}
                     isRound
                   />
                 </Link>
 
-                <Link href="#">
+                <Link href="https://twitter.com/Ityukta_2k22">
                   <IconButton
                     aria-label="twitter"
                     variant="ghost"
@@ -117,21 +117,21 @@ export default function Contact() {
                     icon={<BsTwitter size="28px" />}
                     _hover={{
                       bg: "green.500",
-                      color: useColorModeValue("white", "gray.700"),
+                      color: "white",
                     }}
                     isRound
                   />
                 </Link>
 
-                <Link href="#">
+                <Link href="https://www.facebook.com/Ityukta_2k22-108834475082211/">
                   <IconButton
-                    aria-label="linkedin"
+                    aria-label="facebook"
                     variant="ghost"
                     size="lg"
                     icon={<BsFacebook size="28px" />}
                     _hover={{
                       bg: "green.500",
-                      color: useColorModeValue("white", "gray.700"),
+                      color: "white",
                     }}
                     isRound
                   />
@@ -139,7 +139,9 @@ export default function Contact() {
               </Stack>
 
               <Box
-                bg={useColorModeValue("white", "gray.700")}
+                bgColor="#2d37482a"
+                maxW="90vw"
+                backdropFilter="blur(4px)"
                 borderRadius="lg"
                 p={8}
                 w="lg"
@@ -194,7 +196,7 @@ export default function Contact() {
                     <Button
                       type="submit"
                       colorScheme="green"
-                      bg="green.400"
+                      bg="green.600"
                       color="white"
                       mt={4}
                       _hover={{
