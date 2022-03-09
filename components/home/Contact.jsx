@@ -155,7 +155,9 @@ export default function Contact() {
                       <FormLabel mt={4}>Name</FormLabel>
 
                       <InputGroup>
-                        <InputLeftElement children={<BsPerson />} />
+                        <InputLeftElement>
+                          <BsPerson />
+                        </InputLeftElement>
                         <Input
                           type="text"
                           name="name"
@@ -168,7 +170,9 @@ export default function Contact() {
                       <FormLabel mt={4}>Email</FormLabel>
 
                       <InputGroup>
-                        <InputLeftElement children={<MdOutlineEmail />} />
+                        <InputLeftElement>
+                          <MdOutlineEmail />
+                        </InputLeftElement>
                         <Input
                           type="email"
                           name="email"
