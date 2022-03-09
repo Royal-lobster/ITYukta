@@ -5,6 +5,7 @@ import EventsList from "../components/home/EventsList.jsx";
 import Hero from "../components/home/Hero.jsx";
 import PoweredBy from "../components/home/PoweredBy.jsx";
 import WorkshopList from "../components/home/WorkshopList.jsx";
+import Contact from "../components/home/Contact.jsx";
 
 export async function getStaticProps() {
   // FETCH TECHNICAL EVENTS
@@ -56,6 +57,7 @@ function index({ techEventsData, nonTechEventsData, workshopData }) {
         nonTechEventsData={nonTechEventsData}
       />
       <Culturals />
+      <Contact />
     </>
   );
 }
