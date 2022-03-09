@@ -2,9 +2,15 @@ import React from "react";
 import { Box, Heading, Text, LinkBox, LinkOverlay } from "@chakra-ui/react";
 import { Image } from "../../elements/Image.tsx";
 import NextLink from "next/link";
+import { motion } from "framer-motion";
+const MotionLinkBox = motion(LinkBox);
+
 export function EventCard({ eventName, eventDescription, eventImage }) {
   return (
-    <LinkBox
+    <MotionLinkBox
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      exit={{ opacity: 0 }}
       bgColor="gray.700"
       boxShadow="0px 0px 10px rgba(0, 0, 0, 0.1)"
       borderRadius="md"
@@ -40,6 +46,6 @@ export function EventCard({ eventName, eventDescription, eventImage }) {
         </NextLink>
         <Text p={4}>{eventDescription}</Text>
       </Box>
-    </LinkBox>
+    </MotionLinkBox>
   );
 }

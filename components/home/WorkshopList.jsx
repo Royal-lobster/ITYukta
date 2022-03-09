@@ -2,6 +2,7 @@ import React from "react";
 import { Box, SimpleGrid } from "@chakra-ui/react";
 import Title from "../../elements/Title.tsx";
 import { WorkshopCard } from "./WorkshopCard";
+
 function WorkshopList({ workshopData }) {
   return (
     <Box

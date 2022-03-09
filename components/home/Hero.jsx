@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { VStack, Heading, Text } from "@chakra-ui/react";
 import NET from "vanta/dist/vanta.net.min.js";
 import Script from "next/script";
+import Typist from "react-typist";
 
 function Hero() {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -40,10 +41,12 @@ function Hero() {
           textAlign="center"
           pt="20vh"
           fontFamily="ITYukta"
-          fontSize={{ base: "40px", lg: "80px" }}
+          fontSize={{ base: "50px", lg: "80px" }}
           className="hero-text"
         >
-          IT Yukta 2K22
+          <Typist avgTypingDelay={100} cursor={{ show: false }}>
+            IT Yukta 2K22
+          </Typist>
         </Heading>
         <Text fontSize="30px" bgColor="green.400" fontWeight="bold" px={2}>
           Technical Symposium

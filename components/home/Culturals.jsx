@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Title from "../../elements/Title.tsx";
 import { Image } from "../../elements/Image.tsx";
+import { motion } from "framer-motion";
+const MotionFlex = motion(Flex);
 
 function Culturals() {
   return (
@@ -20,7 +22,10 @@ function Culturals() {
       <Title title="Culturals" />
       <Flex gap={8} flexDirection={{ base: "column", sm: "row", md: "column" }}>
         {/* DANCING */}
-        <Flex
+        <MotionFlex
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          exit={{ opacity: 0 }}
           flexDirection={{ base: "column", md: "row" }}
           gap={{ base: 4, md: 12 }}
           mt={8}
@@ -44,9 +49,12 @@ function Culturals() {
               fugit, cumque deleniti beatae quaerat!
             </Text>
           </Box>
-        </Flex>
+        </MotionFlex>
         {/* SINGING */}
-        <Flex
+        <MotionFlex
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          exit={{ opacity: 0 }}
           flexDirection={{ base: "column-reverse", md: "row" }}
           gap={{ base: 4, md: 12 }}
           mt={8}
@@ -75,7 +83,7 @@ function Culturals() {
             src="/singing.png"
             h="207px"
           />
-        </Flex>
+        </MotionFlex>
       </Flex>
     </Box>
   );

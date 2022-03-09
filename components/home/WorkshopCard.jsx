@@ -12,6 +12,9 @@ import {
 } from "@chakra-ui/react";
 import { Image } from "../../elements/Image.tsx";
 import NextLink from "next/link";
+import { motion } from "framer-motion";
+const MotionLinkBox = motion(LinkBox);
+
 export function WorkshopCard({
   workshopName,
   WorkshopInstructor,
@@ -20,7 +23,10 @@ export function WorkshopCard({
   workshopImage,
 }) {
   return (
-    <LinkBox
+    <MotionLinkBox
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      exit={{ opacity: 0 }}
       overflow="hidden"
       bgColor="gray.700"
       boxShadow="0px 4px 8px rgba(0, 0, 0, 0.25)"
@@ -58,6 +64,6 @@ export function WorkshopCard({
           </HStack>
         </Box>
       </Flex>
-    </LinkBox>
+    </MotionLinkBox>
   );
 }
