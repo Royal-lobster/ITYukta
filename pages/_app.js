@@ -54,6 +54,7 @@ function MyApp({ Component, pageProps }) {
           min-height: 100vh;
         }
         #content-wrap {
+          margin-top: 60px;
           padding-bottom: 98px;
           overflow-x: hidden;
         }

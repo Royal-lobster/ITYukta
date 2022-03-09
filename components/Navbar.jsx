@@ -27,7 +27,15 @@ export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box
+      position="fixed"
+      top="0"
+      left="0"
+      w="100%"
+      zIndex="99"
+      bgColor="#1a202ccb"
+      backdropFilter="blur(10px)"
+    >
       <Flex
         bg="gray.800"
         color="white"
@@ -36,6 +44,7 @@ export default function Navbar() {
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
+        bgColor="transparent"
         borderColor="gray.900"
         align={"center"}
       >
