@@ -23,12 +23,14 @@ import {
   ButtonGroup,
   IconButton,
   useDisclosure,
+  Alert,
 } from "@chakra-ui/react";
 import { FaQrcode } from "react-icons/fa";
 import QRCode from "qrcode.react";
 import Title from "../../elements/Title.tsx";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
+import { AlertIcon } from "@chakra-ui/alert";
 
 export const getStaticPaths = async () => {
   // FETCH ALL WORKSHOPS
@@ -174,6 +176,11 @@ function WorkshopPage({ workshopData }) {
                 : `No content available for ${workshopData.Workshop_Name}`}
             </Text>
             <Title title="Registration" />
+            <Alert status="info" variant="left-accent">
+              <AlertIcon />
+              Entry fee of 100 INR is required to participate in any event in
+              addition to the registration fees of the respective event.
+            </Alert>
             <Text fontSize="md" mt={4}>
               Click the button below to register for this Workshop. You will be
               directed to google form to fill in your details.
@@ -230,9 +237,15 @@ function WorkshopPage({ workshopData }) {
                 </Tr>
                 <Tr>
                   <Td fontWeight="bold" color="gray.400">
+                    Payment
+                  </Td>
+                  <Td>6302950127</Td>
+                </Tr>
+                <Tr>
+                  <Td fontWeight="bold" color="gray.400">
                     Entry Fee
                   </Td>
-                  <Td>Free</Td>
+                  <Td>Rs. 100</Td>
                 </Tr>
                 <Tr>
                   <Td fontWeight="bold" color="gray.400">

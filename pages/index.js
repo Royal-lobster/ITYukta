@@ -6,8 +6,9 @@ import Hero from "../components/home/Hero.jsx";
 import PoweredBy from "../components/home/PoweredBy.jsx";
 import WorkshopList from "../components/home/WorkshopList.jsx";
 import Contact from "../components/home/Contact.jsx";
-import { Box } from "@chakra-ui/react";
+import { Box, Alert } from "@chakra-ui/react";
 import Title from "../elements/Title.tsx";
+import { AlertIcon } from "@chakra-ui/alert";
 
 export async function getStaticProps() {
   // FETCH TECHNICAL EVENTS
@@ -68,6 +69,10 @@ function index({ techEventsData, nonTechEventsData, workshopData }) {
           height="300px"
           style={{ border: "none" }}
         ></iframe>
+        <Alert status="info" variant="top-accent">
+          <AlertIcon />
+          Accommodations are available at the venue.
+        </Alert>
       </Box>
     </>
   );

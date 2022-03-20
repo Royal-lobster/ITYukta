@@ -16,6 +16,14 @@ import {
   useClipboard,
   useColorModeValue,
   VStack,
+  Table,
+  Thead,
+  Tbody,
+  Tfoot,
+  Tr,
+  Th,
+  Td,
+  TableCaption,
 } from "@chakra-ui/react";
 import React from "react";
 import { BsFacebook, BsInstagram, BsPerson, BsTwitter } from "react-icons/bs";
@@ -138,77 +146,104 @@ export default function Contact() {
                 </Link>
               </Stack>
 
-              <Box
+              <Flex
                 bgColor="#2d37482a"
                 maxW="90vw"
+                flexWrap="wrap"
+                gap={4}
                 backdropFilter="blur(4px)"
                 borderRadius="lg"
                 p={8}
-                w="lg"
                 color={useColorModeValue("gray.700", "whiteAlpha.900")}
                 shadow="base"
               >
-                <VStack spacing={5}>
-                  <form
-                    method="POST"
-                    action="https://formsubmit.co/ityukta2k22@gmail.com"
-                  >
-                    <FormControl isRequired>
-                      <FormLabel mt={4}>Name</FormLabel>
-
-                      <InputGroup>
-                        <InputLeftElement>
-                          <BsPerson />
-                        </InputLeftElement>
-                        <Input
-                          type="text"
-                          name="name"
-                          placeholder="Your Name"
-                        />
-                      </InputGroup>
-                    </FormControl>
-
-                    <FormControl isRequired>
-                      <FormLabel mt={4}>Email</FormLabel>
-
-                      <InputGroup>
-                        <InputLeftElement>
-                          <MdOutlineEmail />
-                        </InputLeftElement>
-                        <Input
-                          type="email"
-                          name="email"
-                          placeholder="Your Email"
-                        />
-                      </InputGroup>
-                    </FormControl>
-
-                    <FormControl isRequired>
-                      <FormLabel mt={4}>Message</FormLabel>
-                      <Textarea
-                        name="message"
-                        placeholder="Your Message"
-                        rows={6}
-                        resize="none"
-                      />
-                    </FormControl>
-
-                    <Button
-                      type="submit"
-                      colorScheme="green"
-                      bg="green.600"
-                      color="white"
-                      mt={4}
-                      _hover={{
-                        bg: "green.500",
-                      }}
-                      isFullWidth
+                <Box flex="3" minW="250px">
+                  <VStack spacing={5}>
+                    <form
+                      method="POST"
+                      action="https://formsubmit.co/ityukta2k22@gmail.com"
                     >
-                      Send Message
-                    </Button>
-                  </form>
-                </VStack>
-              </Box>
+                      <FormControl isRequired>
+                        <FormLabel mt={4}>Name</FormLabel>
+
+                        <InputGroup>
+                          <InputLeftElement>
+                            <BsPerson />
+                          </InputLeftElement>
+                          <Input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                          />
+                        </InputGroup>
+                      </FormControl>
+
+                      <FormControl isRequired>
+                        <FormLabel mt={4}>Email</FormLabel>
+
+                        <InputGroup>
+                          <InputLeftElement>
+                            <MdOutlineEmail />
+                          </InputLeftElement>
+                          <Input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                          />
+                        </InputGroup>
+                      </FormControl>
+
+                      <FormControl isRequired>
+                        <FormLabel mt={4}>Message</FormLabel>
+                        <Textarea
+                          name="message"
+                          placeholder="Your Message"
+                          rows={6}
+                          resize="none"
+                        />
+                      </FormControl>
+
+                      <Button
+                        type="submit"
+                        colorScheme="green"
+                        bg="green.600"
+                        color="white"
+                        mt={4}
+                        _hover={{
+                          bg: "green.500",
+                        }}
+                        isFullWidth
+                      >
+                        Send Message
+                      </Button>
+                    </form>
+                  </VStack>
+                </Box>
+                <Box flex="2">
+                  <Table variant="simple">
+                    <Thead>
+                      <Tr>
+                        <Th>Name</Th>
+                        <Th>Contact</Th>
+                      </Tr>
+                    </Thead>
+                    <Tbody>
+                      <Tr>
+                        <Td>Ch.Sasi</Td>
+                        <Td isNumeric>9059223890</Td>
+                      </Tr>
+                      <Tr>
+                        <Td>T.Lohith</Td>
+                        <Td isNumeric>6302058846</Td>
+                      </Tr>
+                      <Tr>
+                        <Td>B.Kamal Naik</Td>
+                        <Td isNumeric>9963369337</Td>
+                      </Tr>
+                    </Tbody>
+                  </Table>
+                </Box>
+              </Flex>
             </Stack>
           </VStack>
         </Box>
