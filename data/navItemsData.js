@@ -90,6 +90,10 @@ export const NAV_ITEMS = [
     href: "/#culturals",
   },
   {
+    label: "Sponsors",
+    href: "/sponsors",
+  },
+  {
     label: "Contact",
     href: "/#contact",
   },

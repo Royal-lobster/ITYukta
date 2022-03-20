@@ -62,20 +62,20 @@ function MyApp({ Component, pageProps }) {
           <div id="content-wrap">
             <Component {...pageProps} />
           </div>
-          <footer>
-            <Footer />
-          </footer>
         </div>
+        <footer>
+          <Footer />
+        </footer>
       </ChakraProvider>
 
       <style jsx>{`
         #page-container {
           position: relative;
-          min-height: 100vh;
+          min-height: calc(100vh - 60px);
         }
         #content-wrap {
           margin-top: 60px;
-          padding-bottom: 98px;
+          padding-bottom: 60px;
           overflow-x: hidden;
         }
         footer {
