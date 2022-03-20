@@ -7,7 +7,16 @@ const MotionFlex = motion(Flex);
 
 function Culturals() {
   return (
-    <Box position="relative" mx="auto" zIndex="9" p={4} mt={8} maxW="1200px">
+    <Box
+      id="culturals"
+      style={{ scrollMarginTop: "100px" }}
+      position="relative"
+      mx="auto"
+      zIndex="9"
+      p={4}
+      mt={8}
+      maxW="1200px"
+    >
       <Box
         position="absolute"
         top="50%"

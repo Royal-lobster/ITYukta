@@ -28,9 +28,9 @@ export const NAV_ITEMS = [
         href: "/events/code-kaze",
       },
       {
-        label: "Tech Crack ",
-        subLabel: "Technology quiz competition",
-        href: "/events/tech-crack",
+        label: "Web Craft ",
+        subLabel: "Web Craft emphasizes the fundamentals of Web technologies.",
+        href: "/events/web-craft",
       },
       {
         label: "The Debugger",
@@ -42,6 +42,12 @@ export const NAV_ITEMS = [
         subLabel:
           "Power point presentation event where you can present your ideas on a topic of technology",
         href: "/events/technion",
+      },
+      {
+        label: "Project Expo",
+        subLabel:
+          "It is a platform to promote multidisciplinary research among all students of the school",
+        href: "/events/project-expo",
       },
     ],
   },
@@ -55,10 +61,10 @@ export const NAV_ITEMS = [
         href: "/events/poster-making",
       },
       {
-        label: "Fastest Fingers",
+        label: "Rapid Typing",
         subLabel:
           "Speed typing competition where you have to type the given text in the given time",
-        href: "/events/fastest-fingers",
+        href: "/events/rapid-typing",
       },
       {
         label: "Treasure hunt",
@@ -72,6 +78,19 @@ export const NAV_ITEMS = [
           "multiple character photos are given and you have to guess movie name",
         href: "/events/picture-perfect",
       },
+      {
+        label: "Qizzy Pop",
+        subLabel: "a non technical quiz event",
+        href: "/events/qizzy-pop",
+      },
     ],
+  },
+  {
+    label: "Cultural Events",
+    href: "/#culturals",
+  },
+  {
+    label: "Contact",
+    href: "/#contact",
   },
 ];

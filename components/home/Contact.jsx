@@ -151,7 +151,7 @@ export default function Contact() {
                 <VStack spacing={5}>
                   <form
                     method="POST"
-                    action="https://formsubmit.co/contact@ityukta.org"
+                    action="https://formsubmit.co/ityukta2k22@gmail.com"
                   >
                     <FormControl isRequired>
                       <FormLabel mt={4}>Name</FormLabel>

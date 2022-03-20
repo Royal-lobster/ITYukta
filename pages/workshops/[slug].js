@@ -149,7 +149,7 @@ function WorkshopPage({ workshopData }) {
                 <Text fontSize="lg" fontWeight="bold">
                   {workshopData.Workshop_Instructor}
                 </Text>
-                <Text fontSize="sm">
+                <Text textAlign="center" fontSize="sm">
                   {workshopData.Workshop_Instructor_Designation}
                 </Text>
               </VStack>
@@ -179,7 +179,7 @@ function WorkshopPage({ workshopData }) {
               directed to google form to fill in your details.
             </Text>
             <ButtonGroup mt={4} size="lg" isAttached variant="outline">
-              <NextLink href={workshopData.Workshop_Registration_URL || "/"}>
+              <NextLink href={workshopData.Workshop_Registration_Link || "/"}>
                 <Button
                   colorScheme="green"
                   leftIcon={<ExternalLinkIcon />}
@@ -231,6 +231,12 @@ function WorkshopPage({ workshopData }) {
                 <Tr>
                   <Td fontWeight="bold" color="gray.400">
                     Entry Fee
+                  </Td>
+                  <Td>Free</Td>
+                </Tr>
+                <Tr>
+                  <Td fontWeight="bold" color="gray.400">
+                    Registration Fee
                   </Td>
                   <Td>
                     {workshopData.Workshop_Fee

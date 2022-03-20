@@ -6,6 +6,8 @@ import Hero from "../components/home/Hero.jsx";
 import PoweredBy from "../components/home/PoweredBy.jsx";
 import WorkshopList from "../components/home/WorkshopList.jsx";
 import Contact from "../components/home/Contact.jsx";
+import { Box } from "@chakra-ui/react";
+import Title from "../elements/Title.tsx";
 
 export async function getStaticProps() {
   // FETCH TECHNICAL EVENTS
@@ -58,6 +60,15 @@ function index({ techEventsData, nonTechEventsData, workshopData }) {
       />
       <Culturals />
       <Contact />
+      <Box maxW="1200px" p={4} mx="auto">
+        <Title title="Venue Map" />
+        <iframe
+          src="https://snazzymaps.com/embed/380669"
+          width="100%"
+          height="300px"
+          style={{ border: "none" }}
+        ></iframe>
+      </Box>
     </>
   );
 }
