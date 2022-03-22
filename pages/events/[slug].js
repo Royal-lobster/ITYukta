@@ -235,12 +235,6 @@ function EventPage({ eventData }) {
                 </Tr>
                 <Tr>
                   <Td fontWeight="bold" color="gray.400">
-                    Entry Fee
-                  </Td>
-                  <Td>Rs. 100</Td>
-                </Tr>
-                <Tr>
-                  <Td fontWeight="bold" color="gray.400">
                     Registration Fee
                   </Td>
                   <Td>
