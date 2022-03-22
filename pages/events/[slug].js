@@ -164,7 +164,7 @@ function EventPage({ eventData }) {
             <Title title="Registration" />
             <Alert status="info" variant="left-accent">
               <AlertIcon />
-              Entry fee of 100 INR is required to participate in any event in
+              General Registration fee - 100 INR is required to participate in any event in
               addition to the registration fees of the respective event.
             </Alert>
             <Text fontSize="md" mt={4}>
