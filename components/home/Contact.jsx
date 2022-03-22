@@ -27,7 +27,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { BsFacebook, BsInstagram, BsPerson, BsTwitter } from "react-icons/bs";
-import { MdEmail, MdOutlineEmail } from "react-icons/md";
+import { MdEmail, MdOutlineEmail, MdPhone } from "react-icons/md";
 
 const confetti = {
   light: {
@@ -174,6 +174,20 @@ export default function Contact() {
                             type="text"
                             name="name"
                             placeholder="Your Name"
+                          />
+                        </InputGroup>
+                      </FormControl>
+                      <FormControl isRequired>
+                        <FormLabel mt={4}>Phone</FormLabel>
+
+                        <InputGroup>
+                          <InputLeftElement>
+                            <MdPhone />
+                          </InputLeftElement>
+                          <Input
+                            type="tel"
+                            name="phone"
+                            placeholder="Your mobile number"
                           />
                         </InputGroup>
                       </FormControl>
