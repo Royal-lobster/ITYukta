@@ -170,7 +170,7 @@ function WorkshopPage({ workshopData }) {
         >
           <Box flex="1">
             <Title title="Workshop Details" />
-            <Text fontSize="md" mt={4} mb={8}>
+            <Text whiteSpace="pre-wrap" fontSize="md" mt={4} mb={8}>
               {workshopData.Workshop_Content
                 ? workshopData.Workshop_Content
                 : `No content available for ${workshopData.Workshop_Name}`}
