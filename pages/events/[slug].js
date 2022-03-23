@@ -156,7 +156,7 @@ function EventPage({ eventData }) {
         >
           <Box flex="1">
             <Title title="Event Details" />
-            <Text fontSize="md" mt={4} mb={8}>
+            <Text whiteSpace="pre-wrap" fontSize="md" mt={4} mb={8}>
               {eventData.Event_Content
                 ? eventData.Event_Content
                 : `No details available for ${eventData.Event_Name}`}
