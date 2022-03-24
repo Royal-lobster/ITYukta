@@ -31,6 +31,8 @@ function sponsors() {
         mt={8}
       >
         <img src="/sponsors/colors.jpeg" />
+        <img src="/sponsors/for-someone-special.jpeg" />
+        <img src="/sponsors/prasad-akula.jpeg" />
       </SimpleGrid>
     </Box>
   );
