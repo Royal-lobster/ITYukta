@@ -51,11 +51,8 @@ function Culturals() {
               Flash Mob
             </Heading>
             <Text>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Accusamus, maiores cumque voluptatibus quos, odit sunt non earum
-              eligendi impedit quis sapiente necessitatibus esse culpa soluta id
-              assumenda aut commodi quasi sint vero voluptates! Sequi architecto
-              fugit, cumque deleniti beatae quaerat!
+              The youngsters perform dance and contribute their skills by entertaining the audience,
+              Where the mash-up songs are going to raise your heartbeats!
             </Text>
           </Box>
         </MotionFlex>
@@ -78,11 +75,8 @@ function Culturals() {
               Cultural Night
             </Heading>
             <Text textAlign={{ base: "left", md: "right" }}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Accusamus, maiores cumque voluptatibus quos, odit sunt non earum
-              eligendi impedit quis sapiente necessitatibus esse culpa soluta id
-              assumenda aut commodi quasi sint vero voluptates! Sequi architecto
-              fugit, cumque deleniti beatae quaerat!
+              It is the celebration of bringing together the co-curricular activities to be enjoyed.
+              It is a night full of fun and entertainment!
             </Text>
           </Box>
           <Image
