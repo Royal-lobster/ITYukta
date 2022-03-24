@@ -48,7 +48,7 @@ function Culturals() {
           />
           <Box flex={{ base: "unset", md: "3" }}>
             <Heading as="h3" fontSize="3xl" mb={4}>
-              Dancing
+              Flash Mob
             </Heading>
             <Text>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -75,7 +75,7 @@ function Culturals() {
               fontSize="3xl"
               mb={4}
             >
-              Singing
+              Cultural Night
             </Heading>
             <Text textAlign={{ base: "left", md: "right" }}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
