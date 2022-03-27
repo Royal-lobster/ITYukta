@@ -6,7 +6,7 @@ import Hero from "../components/home/Hero.jsx";
 import PoweredBy from "../components/home/PoweredBy.jsx";
 import WorkshopList from "../components/home/WorkshopList.jsx";
 import Contact from "../components/home/Contact.jsx";
-import { Box, Alert } from "@chakra-ui/react";
+import { Box, Alert, Button, VStack, Text, Link } from "@chakra-ui/react";
 import Title from "../elements/Title.tsx";
 import { AlertIcon } from "@chakra-ui/alert";
 
@@ -55,6 +55,15 @@ function index({ techEventsData, nonTechEventsData, workshopData }) {
       <PoweredBy />
       <About />
       <WorkshopList workshopData={workshopData} />
+      <Alert alignItems="center" borderRadius={8} gap={2} w="min(90%, 900px)" my={8} mx="auto">
+        <VStack spacing={2} align="center"  mx="auto">
+          <AlertIcon />
+        <Text maxW="600px" textAlign='center'>
+          <b>General Registration</b> (₹100) is an entry fee to participate in any workshop or event. It helps us identify you and letting you into our college with regards to all protocols. So kindly pay general registration fee before registering any other event.
+        </Text>
+          <Button onClick={()=>window.open("https://forms.gle/UzzuC4jvgdC2kJmF8", "_blank")}>Pay for General Registration</Button>
+        </VStack>
+      </Alert>
       <EventsList
         techEventsData={techEventsData}
         nonTechEventsData={nonTechEventsData}

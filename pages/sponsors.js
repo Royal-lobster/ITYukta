@@ -1,6 +1,5 @@
 import { Flex, Heading, Box, Text, SimpleGrid } from "@chakra-ui/layout";
 import React from "react";
-import { Image } from "../elements/Image.tsx";
 
 function sponsors() {
   return (
