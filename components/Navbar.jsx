@@ -36,6 +36,7 @@ export default function Navbar() {
       bgColor="#1a202ccb"
       backdropFilter="blur(10px)"
     >
+      <Box textAlign="center" bgColor='yellow.600' fontWeight="bold">Thanks for participating in ITYUKTA 2K22. This website is now archived</Box>
       <Flex
         bg="gray.800"
         color="white"

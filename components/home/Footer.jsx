@@ -8,6 +8,7 @@ import {
   useBreakpointValue,
   VisuallyHidden,
   Flex,
+  Link,
 } from "@chakra-ui/react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
@@ -80,7 +81,7 @@ export default function Footer() {
             IT Yukta
           </Text>
         </Flex>
-        <Text>© 2022 IT Yukta. All rights reserved</Text>
+        <Text>© 2022 IT Yukta. Website by <Link href="https://srujangurram.me">Srujan</Link></Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton
             label={"Twitter"}
