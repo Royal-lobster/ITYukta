@@ -1,6 +1,6 @@
-# ITYUKTA - Fest Website
+# ITYukta Website
 
-Website for ITYUKTA Fest - Department of Information and Technology, Jawaharlal Nehuru Technological University Gurajada. 
+Website for ITYukta Fest - Department of Information and Technology, Jawaharlal Nehuru Technological University Gurajada. 
 
 🔗 **Link:** https://ityukta.org/ / https://ityukta.vercel.app
 
